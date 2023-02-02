@@ -269,9 +269,9 @@
         </div>
 
         <div class="input flex-col">
-            <label for="second_section_text_card_three"> Card Text</label>
+            <label for="third_section_text_card_three"> Card Text</label>
             <textarea name = 'third_section_text_card_three' >{{$card['content']}}</textarea>
-            @error('second_section_text_card_three')
+            @error('third_section_text_card_three')
                 <div class="error">
                     {{$message}}
                 </div>
@@ -304,9 +304,9 @@
         </div>
 
         <div class="input flex-col">
-            <label for="second_section_text_card_four"> Card Text</label>
+            <label for="third_section_text_card_four"> Card Text</label>
             <textarea name = 'third_section_text_card_four' >{{$card['content']}}</textarea>
-            @error('second_section_text_card_four')
+            @error('third_section_text_card_four')
                 <div class="error">
                     {{$message}}
                 </div>
