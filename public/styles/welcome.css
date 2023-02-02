@@ -183,7 +183,8 @@ video {
     }
 
     header {
-        background: url('/images/luli.jpeg') #0e0e0eb4;
+        /* background: url('/images/luli.jpeg') #0e0e0eb4; */
+        background: var(--background_url), linear-gradient(90deg, #0e0e0e, transparent);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
