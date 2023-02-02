@@ -1,0 +1,212 @@
+
+
+
+
+/* header */
+
+header {
+    background: var(--background_url), linear-gradient(90deg, #0e0e0e, transparent);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header .content {
+    min-height: 100vh;
+    padding: 0 5rem;
+    max-width: 650px;
+}
+
+header h1 {
+    font-size: 320%;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+header h1 span {
+    color: #ffde67;
+}
+
+header button {
+    width: max-content;
+}
+
+header p {
+    padding: .5rem 0;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* first section */
+
+section {
+    color: #222;
+    transform: scale(.9);
+}
+
+.large-card  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.large-card .content {
+    padding: 4rem;
+}
+
+.large-card .title {
+    font-size: 250%;
+}
+
+.large-card button {
+    margin-top: .5rem;
+}
+
+
+/* Second Section */
+
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: whitesmoke;
+    /* height: 700px; */
+    transform: scale(.9);
+}
+
+.card .image {
+    height: 300px;
+}
+
+.card .content {
+    padding: 1.5rem;
+}
+
+.card .title {
+    font-size: 170%;
+}
+
+.card .btns {
+    margin-top: .85rem;
+    white-space: nowrap;
+}
+
+/* Third Section */
+
+.different h1 {
+    background: #00000041;
+    border: 1px solid #ffffff26;
+    font-size: 280%;
+    font-weight: 600;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    /* text-decoration: dotted; */
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    transform: scale(.9);
+}
+
+.values .value {
+    transform: scale(.9);
+}
+
+.different {
+    color: #fff;
+    transform: scale(1);
+    padding: 2rem 0;
+
+    background: url('/images/brick.jpg') #1a1a1a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.value .icon {
+    --size: 150px;
+    height: var(--size);
+    width: var(--size);
+}
+/* 
+.value img {
+    filter: invert();
+} */
+
+.value .title {
+    font-size: 150%;
+    padding: .5rem 0;
+}
+
+/* Fourth Section */
+
+video {
+    height: 90vh;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .desktop{display: none}
+
+    .mobile-btn {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    header .content {
+        padding: 0 2rem;
+    }
+
+    .large-card.inverse .image {
+        grid-row: 1/2;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    header .content {
+        font-size: 70%;
+    }
+
+    header {
+        background: url('/images/luli.jpeg') #0e0e0eb4;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+    }
+
+    .large-card {
+        grid-template-columns: 100%;
+    }
+
+    .large-card .content {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    header br {
+        display: none;
+    }
+
+    .different h1 {
+        font-size: 120%;
+    }
+}

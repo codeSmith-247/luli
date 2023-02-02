@@ -1,0 +1,71 @@
+body {padding-top: 15vh; color: #333}
+
+nav {background: #fff}
+
+.menu-btn, .menu {color: #fff;}
+
+
+section {
+    min-height: 75vh;
+}
+
+section > .bg{
+    opacity: .05;
+}
+
+.left-right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.left-right .left {
+    padding: 2rem;
+}
+
+
+h1 {
+    font-size: 300%;
+}
+
+.left p {
+    padding: .5rem 2rem;
+}
+
+form {
+    background: #fff;
+    box-shadow: 0 0 10px #99999967;
+    padding: .5rem 0;
+    transform: scale(.95);
+}
+
+.input {
+    transform: scale(.95);
+    margin: .75rem 0;
+}
+
+input, textarea {
+    border: 1px solid lightgrey;
+    outline: none;
+    font-size: 100%;
+    font-family: inherit;
+    resize: none;
+
+    padding: 1rem;
+}
+
+textarea {
+    height: 250px;
+}
+
+@media only screen and (max-width: 500px) {
+    .left-right {grid-template-columns: 1fr;}
+
+    .left-right .left p {
+        padding: 1rem 0;
+    }
+
+    .left-right .left {
+        padding: 2rem 0;
+        transform: scale(.9);
+    }
+}

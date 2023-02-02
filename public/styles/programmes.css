@@ -1,0 +1,72 @@
+body {padding-top: 15vh; color: #333}
+
+nav {background: #fff}
+
+.menu-btn, .menu {color: #fff;}
+
+h1.title {
+    padding: 0 2rem;
+    transform: scale(.9);
+    margin: 2rem 0;
+    margin-bottom: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-content: center;
+    transform: scale(.9);
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.card {
+    background: lightgrey;
+    height: 85vh;
+}
+
+.card .content {
+    backdrop-filter: blur(15px);
+    color: #fff;
+    min-height: 40%;
+    padding: 1rem 2rem;
+}
+
+.card .overlay {
+    background: linear-gradient(#11111100, #111111c3);
+}
+
+.card h1 {
+    font-size: 200%;
+    padding-bottom: .75rem;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.card button {
+    margin-top: 1rem;
+    background: #070707ab;
+    border: 1px solid #ffffff95;
+    padding: .75rem 4rem;
+}
+
+.card button:hover {
+    border-color: #ffd334;
+    color: #ffd334;
+
+}
+
+@media screen and (max-width: 460px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        transform: scale(1)
+    }
+
+    h1.title {
+        margin: 1rem 0;
+        text-align: center;
+    }
+}

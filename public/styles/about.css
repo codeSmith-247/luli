@@ -1,0 +1,78 @@
+body {
+    padding-top: 15vh;
+    color: #333;
+}
+nav {
+    background: #fff;
+    color: #333;
+}
+
+.menu-btn, .menu {color: #fff;}
+
+.menu-btn {
+    color: #fff;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1rem 0;
+    /* transform: scale(.9); */
+}
+
+.split img, .split .right {
+    transform: scale(.9);
+    /* width: 400px; */
+}
+
+h1 {
+    font-size: 300%;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin: 2rem 0;
+    font-size: 200%;
+}
+
+p {
+    line-height: 2.2;
+    font-size: 100%;
+    word-spacing: 2.5px;
+}
+
+section h1 {
+    margin: 2rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    transform: scale(.9);
+}
+
+.card .image {
+    background: lightgray;
+    --size: 220px;
+    height: var(--size);
+    width: 100%;
+}
+
+.card .name {
+    padding: 1rem 0;
+}
+
+.card b {
+    font-size: 110%;
+}
+
+@media only screen and (max-width: 610px) {
+    .split .left {
+        grid-row: 1/2;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+}

@@ -1,0 +1,171 @@
+
+section {
+    
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+
+    color: #333;
+
+    overflow: hidden;
+
+}
+
+section.active {
+    grid-template-columns: 0% 100%;
+}
+
+.menu {
+    background: #ffffff;
+    box-shadow: 0 0 50px #99999927, 0 0 5px #99999927;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.menu .logo {
+    height: 60px;
+    margin: 1rem 0;
+}
+
+.menu-items {
+    padding: 2rem 1rem;
+}
+
+.menu-item {
+    box-shadow: 0 0 10px #c9c9c92e, 0 0 5px #9999990d;
+    border-radius: 5px;
+    border-left: 5px solid transparent;
+    margin-bottom: 1.5rem;
+}
+
+.menu-item:hover {
+    border-color: #ffde67;
+}
+
+.menu-item.active {
+    background: #333;
+    color: #fff;
+
+}
+
+.menu-item .icon {    
+    --size: 45px;
+    height: var(--size);
+    width:  var(--size);
+    font-size: 120%;
+}
+
+.content-area {
+    padding: 1rem;
+}
+
+nav {
+    box-shadow: 0 0 10px #c9c9c92e, 0 0 5px #9999990d;
+    height: 50px;
+    padding: 0 1rem;
+}
+
+.menu-btn {
+    font-size: 150%;
+}
+
+.screen {
+    height: calc(100vh - 50px - 1rem);
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.input-group {
+    transform: scale(.95);
+    border-bottom: 1px solid lightgrey;
+    /* margin-bottom: 2rem; */
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+h3 {
+    padding-bottom: .75rem;
+}
+
+.input {
+    margin-bottom: 1rem;
+}
+
+input, textarea, button {
+    padding: .75rem;
+    outline: none;
+    font-family: inherit;
+    font-size: 100%;
+    margin: .5rem 0;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.mobile {
+    display: none;
+}
+
+button, .button {
+    background: #111111;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.button {
+    padding: .75rem 2rem;
+    width: max-content;
+}
+
+button[type = 'submit'] {
+    background: #2338f0;
+    bottom: 10px;
+    right: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 80%;
+    padding: .25rem 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    section, section.active {
+        grid-template-columns: 100%;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -200vw;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+    }
+
+    section.active .menu {
+        left: 0;
+    }
+
+    .close-btn {
+        display: flex;
+        padding: .25rem 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    button[type = 'submit'] {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transform: scale(.95);
+    }
+
+    .screen {
+        padding: 1rem;
+    }
+}
