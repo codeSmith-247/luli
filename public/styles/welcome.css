@@ -128,7 +128,7 @@ section {
     transform: scale(1);
     padding: 2rem 0;
 
-    background: url('/images/brick.jpg') #1a1a1a;
+    background: url('../images/brick.jpg') #1a1a1a;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
