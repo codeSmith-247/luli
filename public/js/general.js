@@ -151,3 +151,6 @@ function donate() {
 }
 
 
+window.onload = () => {
+    activate('body');
+}
