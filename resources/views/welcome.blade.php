@@ -254,7 +254,7 @@
                 </div>
 
                 <div class = 'image'>
-                    <video src="{{'/images/home/' . $card->image ?? asset('/videos/rain.mp4')}}" muted='True' autoplay='True' loop='True'></video>
+                    <video src="{{asset('/images/home/'. $card['image'] ?? 'rain.mp4')}}" muted='True' autoplay='True' loop='True'></video>
                 </div>
             </div>
         </section>
