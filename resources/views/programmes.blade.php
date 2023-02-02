@@ -25,7 +25,7 @@
                         {{$programme['content']}}
                     </p>
 
-                    <button>Donate</button>
+                    <button onclick = 'donate();'>Donate</button>
                 </div>
             </div>
         @endforeach
