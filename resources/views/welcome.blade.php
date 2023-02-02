@@ -10,7 +10,7 @@
 @foreach ($cards as $card)
 
     @if ($card->name == 'header')
-        <header class = 'p-rel full-w' style = '--background_url: url("{{'/images/home/' . $card->image ?? '/images/luli.jpeg'}}")'>   
+        <header class = 'p-rel full-w' style = '--background_url: url("{{asset('/images/home/' . $card->image ?? 'luli.jpeg')}}")'>   
             <div class = 'content flex-col-center'>
                 <h1> {{$card->title}}</h1>
     
@@ -18,7 +18,7 @@
                     {{$card->content}}
                 </p>
     
-                <button class = 'flex-row flex-center'>
+                <button class = 'flex-row flex-center' onclick = 'location.href = "{{route("programmes")}}"'>
                     <i class="bi bi-calendar-week-fill"></i>
                     <span>Ongoing Programmes</span>
                 </button>
@@ -31,7 +31,7 @@
             <div class = 'large-card'>
 
                 <div class = 'image'>
-                    <img src="{{asset('/images/home/' . $card->image ?? '/images/luli_2.jpeg')}}" alt="" class = 'obj-fit'>
+                    <img src="{{asset('/images/home/' . ($card->image ?? 'luli_2.jpeg'))}}" alt="" class = 'obj-fit'>
                 </div>
 
                 <div class = 'content'>
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class = 'btns'>
-                        <button>
+                        <button onclick = 'location.href = "{{route("contact")}}"'>
                             <i class="bi bi-telephone-fill"></i>
                             <span>Reach out to us</span>
                         </button>
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class = 'btns flex-row flex-center'>
-                            <button class = 'full-w'>
+                            <button class = 'full-w' onclick = 'donate();'>
                                 <i class="bi bi-globe-europe-africa"></i>
                                 <span>Make a difference</span>
                             </button>
@@ -104,7 +104,7 @@
                         </div>
 
                         <div class = 'btns flex-row flex-center'>
-                            <button class = 'full-w'>
+                            <button class = 'full-w' onclick = 'location.href = "{{route("contact")}}"'>
                                 <i class = 'bi bi-trophy-fill'></i>
                                 <span>Become a Luli Champion</span>
                             </button>
@@ -131,7 +131,7 @@
                         </div>
 
                         <div class = 'btns flex-row flex-center'>
-                            <button class = 'full-w'>
+                            <button class = 'full-w' onclick= 'donate();'>
                                 <i class="bi bi-heart-fill"></i>
                                 <span>Make a donation</span>
                             </button>
@@ -246,7 +246,7 @@
                     </div>
 
                     <div class = 'btns'>
-                        <button>
+                        <button onclick = 'location.href = "{{route("about")}}"'>
                             <i class="bi bi-telephone-fill"></i>
                             <span>Become a hero</span>
                         </button>

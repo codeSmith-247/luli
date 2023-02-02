@@ -92,3 +92,12 @@
 </html>
 
 @yield('scripts')
+
+<script>
+    @if(isset($message))
+        Swal.fire({
+            icon: 'success',
+            title: 'Content Updated',
+        });
+    @endif
+</script>

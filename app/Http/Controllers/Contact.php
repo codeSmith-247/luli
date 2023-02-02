@@ -63,5 +63,7 @@ class Contact extends Controller
             'location' => 'contact'
         ]);
 
+        return Redirect::back()->with('message','Operation Successful !');
+
     }
 }
