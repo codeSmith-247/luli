@@ -170,7 +170,7 @@
             @foreach($heros as $hero)
             
                 <div class="card">
-                    <div class="image">
+                    <div class="image" style = 'background: transparent;'>
                         <img src="{{asset("images/about/" . ($hero['image'] ?? "luli_2.jpeg"))}}" alt="" class="obj-fit" style = 'object-fit: contain;'>
 
                     </div>
