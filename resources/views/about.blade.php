@@ -171,7 +171,7 @@
             
                 <div class="card">
                     <div class="image">
-                        <img src="{{asset("images/about/" . ($hero['image'] ?? "luli_2.jpeg"))}}" alt="" class="obj-fit">
+                        <img src="{{asset("images/about/" . ($hero['image'] ?? "luli_2.jpeg"))}}" alt="" class="obj-fit" style = 'object-fit: contain;'>
 
                     </div>
                     <div class="name text-center">
