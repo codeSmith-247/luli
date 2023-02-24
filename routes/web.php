@@ -17,7 +17,11 @@ use App\Http\Controllers\Contact;
 |
 */
 
-Route::get('/', [Home::class, 'index'])->name('home');
+Route::get('/', function() {
+    return view('coming');
+})->name('comming');
+
+Route::get('/home', [Home::class, 'index'])->name('home');
 
 Route::get('/about', [About::class, 'index'])->name('about');
 
