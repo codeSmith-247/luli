@@ -23,6 +23,13 @@ h1.title {
 .card {
     background: lightgrey;
     height: 85vh;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .card .content {
@@ -30,6 +37,10 @@ h1.title {
     color: #fff;
     min-height: 40%;
     padding: 1rem 2rem;
+}
+
+.card:hover .content  {
+    backdrop-filter: blur(40px);
 }
 
 .card .overlay {

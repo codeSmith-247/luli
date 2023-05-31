@@ -13,7 +13,7 @@
     <section class = 'cards p-rel'>
 
         @foreach ($programmes as $programme )
-            <div class = 'card p-rel'>
+            <div class = 'card p-rel' @if($programme['title'] == "Empower Special Learners") onclick="location.href = '{{route('special_kids_programme')}}';" @endif>
                 <div class="image full-hw p-rel">
                     <img src="{{asset("images/luli_3.jpeg")}}" alt="" class="obj-fit">
                     <div class = 'overlay p-abs top-left full-hw'></div>

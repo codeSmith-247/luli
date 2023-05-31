@@ -18,7 +18,7 @@ header {
 header .content {
     min-height: 100vh;
     padding: 0 5rem;
-    max-width: 650px;
+    max-width: 850px;
 }
 
 header h1 {
@@ -37,6 +37,7 @@ header button {
 
 header p {
     padding: .5rem 0;
+    max-width: 70%;
 }
 
 .mobile {

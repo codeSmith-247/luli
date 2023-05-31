@@ -17,8 +17,9 @@
 
     <x-navigation />
 
-
+    <section class='layout-content'>
     @yield('contents')
+    </section>
 
 
     <x-footer />

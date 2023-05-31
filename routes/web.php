@@ -29,6 +29,12 @@ Route::get('/programmes',  [Program::class, 'index'])->name('programmes');
 
 Route::get('/contact', [Contact::class, 'index'])->name('contact');
 
+//programmes description and details
+
+Route::get('/programmes/special', function () {
+    return view('programmes/special');
+})->name('special_kids_programme');
+
 
 Route::get('/admin',  [Home::class, 'admin'])->name('home_settings');
 Route::post('/admin', [Home::class, 'create']);

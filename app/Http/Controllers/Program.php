@@ -10,7 +10,7 @@ class Program extends Controller
 {
     //
     public function index() {
-        $programmes = GroupCard::where('name', 'programmes')->get();
+        $programmes = GroupCard::where('name', 'programmes')->orderBy('id', 'desc')->get();
 
         return view('programmes', [
             'programmes' => $programmes
@@ -86,7 +86,7 @@ class Program extends Controller
                 $imageName = time(). '_programme.' . $image->getClientOriginalName();
             
                 if($image->move(public_path('images/program'), $imageName)) {
-                    GroupCard::where('content', $name)->update([
+                    GroupCard::where('content', $text)->update([
                         'image' => $imageName
                     ]);
                 }
